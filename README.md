@@ -7,8 +7,6 @@ This is the source code for my personal website, [ZachMillar.com](https://zachmi
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn](https://ui.shadcn.com/)
 
 ## Development
 
