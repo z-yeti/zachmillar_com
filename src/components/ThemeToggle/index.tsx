@@ -13,7 +13,7 @@ export const ThemeToggle: React.FC = () => {
       >
         light
       </span>
-      <span>/</span>
+      <span>|</span>
       <span
         className={
           theme === "dark" ? styles["theme-toggle__text--underline"] : ""
