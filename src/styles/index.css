@@ -14,3 +14,40 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 0;
 }
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+}
+
+a,
+button {
+  color: var(--color--text);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fira-code-light {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-code-regular {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-code-bold {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
