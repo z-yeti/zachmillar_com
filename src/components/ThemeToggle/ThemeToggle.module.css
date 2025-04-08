@@ -1,0 +1,16 @@
+.theme-toggle__button {
+  background-color: transparent;
+  color: var(--color--text);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+}
+
+.theme-toggle__text--underline {
+  text-decoration: underline;
+}
