@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router";
 import styles from "./Footer.module.css";
 
 export const Footer: FC = () => {
@@ -6,7 +7,7 @@ export const Footer: FC = () => {
     <footer className={styles.footer}>
       <span>&copy; Zach Millar | {new Date().getFullYear()}</span>
       <div>
-        <a href="/cv">CV</a>
+        <Link to="/cv">CV</Link>
         <span> | </span>
         <a
           href="https://github.com/z-yeti"

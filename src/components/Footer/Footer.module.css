@@ -12,3 +12,7 @@
   right: 0;
   background-color: var(--color--background);
 }
+
+.footer a:hover {
+  text-decoration: underline;
+}

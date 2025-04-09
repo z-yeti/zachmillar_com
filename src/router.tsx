@@ -12,16 +12,16 @@ export const AppRouter = () => {
 
   return (
     <>
-      <Header />
-      <Page>
-        <BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <Page>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cv" element={<CV />} />
           </Routes>
-        </BrowserRouter>
-      </Page>
-      <Footer />
+        </Page>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 };
