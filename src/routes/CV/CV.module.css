@@ -1,0 +1,12 @@
+.cv__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cv__skills span {
+  background-color: var(--color--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
