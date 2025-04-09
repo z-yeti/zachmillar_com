@@ -6,15 +6,15 @@ export const CV: FC = () => {
     <>
       <section>
         <h1>Zach Millar</h1>
-        <div>Staff Front-End Software Engineer</div>
+        <p>Staff Front-End Software Engineer</p>
         <div className={styles["cv__contact"]}>
-          <p>Medford, OR</p>
-          <p>|</p>
-          <p>
+          <span>Medford, OR</span>
+          <span className={styles["cv__contact--pipe"]}>|</span>
+          <span>
             <a href="mailto:me@zachmillar.com">me@zachmillar.com</a>
-          </p>
-          <p>|</p>
-          <p>
+          </span>
+          <span className={styles["cv__contact--pipe"]}>|</span>
+          <span>
             <a
               href="https://github.com/z-yeti"
               target="_blank"
@@ -22,9 +22,9 @@ export const CV: FC = () => {
             >
               GitHub
             </a>
-          </p>
-          <p>|</p>
-          <p>
+          </span>
+          <span className={styles["cv__contact--pipe"]}>|</span>
+          <span>
             <a
               href="https://www.linkedin.com/in/zach-millar/"
               target="_blank"
@@ -32,7 +32,7 @@ export const CV: FC = () => {
             >
               LinkedIn
             </a>
-          </p>
+          </span>
         </div>
       </section>
 

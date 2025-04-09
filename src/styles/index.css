@@ -26,6 +26,16 @@ textarea {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 12px;
+  }
+}
+
 a,
 button {
   color: var(--color--text);

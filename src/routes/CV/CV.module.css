@@ -1,6 +1,19 @@
 .cv__contact {
   display: flex;
   gap: 1rem;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.cv__contact a:hover {
+  text-decoration: underline;
+}
+
+.cv__contact--pipe {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .cv__skills {
@@ -13,5 +26,4 @@
   background-color: var(--color--primary);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  font-size: 1rem;
 }
