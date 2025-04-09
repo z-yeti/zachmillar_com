@@ -9,12 +9,6 @@ export const ContactButton = () => {
 
   return (
     <>
-      <form name="contact" method="POST" data-netlify="true" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message" />
-      </form>
-
       <button
         className={styles["contact__button"]}
         onClick={() => setOpen(true)}
@@ -48,7 +42,6 @@ export const ContactButton = () => {
                 className={styles["contact__form"]}
                 name="contact"
                 method="POST"
-                data-netlify="true"
                 onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact" />
