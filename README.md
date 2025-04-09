@@ -1,6 +1,6 @@
-# ZachMillar.com
+# ZachMillar.dev
 
-This is the source code for my personal website, [ZachMillar.com](https://zachmillar.com).
+This is the source code for my personal website, [ZachMillar.dev](https://zachmillar.dev).
 
 ## Technologies
 
