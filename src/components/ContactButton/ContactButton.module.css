@@ -38,11 +38,12 @@
 
 .contact__modal--close {
   position: absolute;
-  top: 0.5rem;
-  right: 1rem;
+  top: 0.3em;
+  right: 0.7em;
   border: none;
   font-size: 1.5em;
   cursor: pointer;
+  padding: 0;
 }
 
 .contact__form {
