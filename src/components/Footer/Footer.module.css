@@ -6,8 +6,9 @@
   font-size: 0.8rem;
   height: 34px;
   border-top: 1px solid;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: var(--color--background);
 }

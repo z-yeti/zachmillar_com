@@ -1,5 +1,6 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { Page } from "@/components/Page";
 import { useDynamicFavicon } from "@/hooks/useDynamicFavicon";
 import { CV } from "@/routes/CV";
 import { Home } from "@/routes/Home";
@@ -12,12 +13,14 @@ export const AppRouter = () => {
   return (
     <>
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cv" element={<CV />} />
-        </Routes>
-      </BrowserRouter>
+      <Page>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cv" element={<CV />} />
+          </Routes>
+        </BrowserRouter>
+      </Page>
       <Footer />
     </>
   );
