@@ -1,3 +1,8 @@
+.cv__contact {
+  display: flex;
+  gap: 1rem;
+}
+
 .cv__skills {
   display: flex;
   flex-wrap: wrap;
