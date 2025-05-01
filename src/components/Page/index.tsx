@@ -8,5 +8,3 @@ type PageProps = {
 export const Page: FC<PageProps> = ({ children }) => {
   return <div className={styles.page}>{children}</div>;
 };
-
-export default Page;
