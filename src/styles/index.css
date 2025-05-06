@@ -2,12 +2,14 @@
   --color--background: #f4f6f5;
   --color--text: #131614;
   --color--primary: #d3d9d5;
+  --color--squares: #aeadf0;
 }
 
 [data-theme="dark"] {
   --color--background: #131614;
   --color--text: #f4f6f5;
   --color--primary: #7c8d82;
+  --color--squares: #d8dcff;
 }
 
 body {

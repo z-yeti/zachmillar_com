@@ -7,6 +7,7 @@ import { CV } from "@/routes/CV";
 import { Home } from "@/routes/Home";
 import "@/styles/index.css";
 import { BrowserRouter, Route, Routes } from "react-router";
+import { ThreeD } from "./routes/3D";
 
 export const AppRouter = () => {
   useDynamicFavicon();
@@ -20,6 +21,7 @@ export const AppRouter = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cv" element={<CV />} />
+            <Route path="/playground/3d" element={<ThreeD />} />
           </Routes>
         </Page>
         <Footer />
