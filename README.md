@@ -11,5 +11,5 @@ This is the source code for my personal website, [ZachMillar.dev](https://zachmi
 ## Development
 
 1. Clone the repository
-2. Run `yarn` to install dependencies
-3. Run `yarn dev` to start the development server
+2. Run `pnpm install` to install dependencies
+3. Run `pnpm dev` to start the development server
