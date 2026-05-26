@@ -3,6 +3,8 @@
   --color--text: #131614;
   --color--primary: #d3d9d5;
   --color--squares: #aeadf0;
+  --color--accent: #aeadf0;
+  --color--muted: #6b7a6f;
 }
 
 [data-theme="dark"] {
@@ -10,12 +12,14 @@
   --color--text: #f4f6f5;
   --color--primary: #7c8d82;
   --color--squares: #d8dcff;
+  --color--accent: #d8dcff;
+  --color--muted: #8a9d8f;
 }
 
 body {
   background-color: var(--color--background);
   color: var(--color--text);
-  transition: all 0.3s ease;
+  transition: all 0.33s ease;
   margin: 0;
 }
 

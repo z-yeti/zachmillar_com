@@ -1,12 +1,164 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
+  max-width: 710px;
+  gap: 2.5rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
-.home a:hover {
-  text-decoration: underline;
+.greeting {
+  color: var(--color--accent);
+  font-size: 0.9em;
+}
+
+.name {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.title {
+  margin: 0;
+  color: var(--color--muted);
+  font-size: 0.95em;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.history {
+  min-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 60%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 60%);
+}
+
+.historyLine {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
+  opacity: 0.6;
+}
+
+.prompt {
+  margin: 0;
+  font-size: 1em;
+  display: flex;
+  align-items: baseline;
+}
+
+.promptPath {
+  color: var(--color--accent);
+}
+
+.promptArrow {
+  color: var(--color--muted);
+}
+
+.promptSlash {
+  color: var(--color--muted);
+}
+
+.cursor {
+  color: var(--color--accent);
+  animation: blink 1s step-end infinite;
+}
+
+.cursorActive {
+  animation: none;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.bio {
+  margin: 0;
+  line-height: 1.65;
+  max-width: 650px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  border: 1px solid var(--color--accent);
+  color: var(--color--accent);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  transition:
+    background-color 0.33s ease,
+    color 0.15s ease;
+}
+
+.ctaPrimary:hover {
+  background-color: var(--color--accent);
+  color: var(--color--background);
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color--primary);
+}
+
+.sectionLabel {
+  color: var(--color--accent);
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
+}
+
+.featuredCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color--primary);
+  border-radius: 4px;
+  transition: border-color 0.33s ease;
+}
+
+.featuredCard:hover {
+  border-color: var(--color--accent);
+}
+
+.featuredTitle {
+  font-size: 0.9em;
+}
+
+.featuredMeta {
+  font-size: 0.8em;
+  color: var(--color--muted);
 }
