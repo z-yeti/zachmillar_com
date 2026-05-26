@@ -3,7 +3,7 @@ import styles from "./CV.module.css";
 
 export const CV: FC = () => {
   return (
-    <>
+    <div>
       <section className={styles["cv__header-section"]}>
         <h1>Zach Millar</h1>
         <p className={styles["cv__header-title"]}>Staff Front-End Software Engineer</p>
@@ -240,6 +240,6 @@ export const CV: FC = () => {
           <span>May 2010</span>
         </div>
       </section>
-    </>
+    </div>
   );
 };
