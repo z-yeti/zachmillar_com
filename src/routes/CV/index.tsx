@@ -16,6 +16,16 @@ export const CV: FC = () => {
           <span className={styles["cv__contact--pipe"]}>|</span>
           <span>
             <a
+              href="https://zachmillar.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              zachmillar.dev
+            </a>
+          </span>
+          <span className={styles["cv__contact--pipe"]}>|</span>
+          <span>
+            <a
               href="https://github.com/z-yeti"
               target="_blank"
               rel="noopener noreferrer"
@@ -39,11 +49,12 @@ export const CV: FC = () => {
       <section>
         <h2>Professional Summary</h2>
         <p>
-          Staff Front-End Engineer with 9+ years of experience specializing in
-          the React ecosystem and modern web development. Proven track record in
-          optimizing application performance, building scalable component
-          libraries, and leading technical teams to deliver high-quality,
-          user-centric experiences.
+          Staff Front-End Engineer with 9+ years of experience in React and
+          modern web development. Track record of owning frontend architecture
+          across the full stack: component libraries, CI/CD pipelines,
+          e-commerce platforms, and data-heavy interfaces. Works well as a
+          technical lead or a focused individual contributor, and has experience
+          building and mentoring engineering teams from the ground up.
         </p>
       </section>
 
@@ -53,8 +64,8 @@ export const CV: FC = () => {
         <div className={styles["cv__skills"]}>
           <span>HTML</span>
           <span>CSS</span>
-          <span>Javascript</span>
-          <span>Typescript</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
           <span>React</span>
           <span>Vue</span>
           <span>Svelte</span>
@@ -62,21 +73,23 @@ export const CV: FC = () => {
         <h3>Styling</h3>
         <div className={styles["cv__skills"]}>
           <span>SCSS/SASS</span>
-          <span>CSS Modules</span>
-          <span>Tailwind CSS</span>
           <span>Styled Components</span>
+          <span>Tailwind CSS</span>
+          <span>Material Design</span>
         </div>
         <h3>State Management</h3>
         <div className={styles["cv__skills"]}>
           <span>Redux</span>
+          <span>Redux Toolkit</span>
+          <span>RTK Query</span>
           <span>MobX</span>
-          <span>React Context</span>
         </div>
         <h3>Testing</h3>
         <div className={styles["cv__skills"]}>
           <span>Jest</span>
           <span>React Testing Library</span>
-          <span>Vitest</span>
+          <span>MSW</span>
+          <span>Playwright</span>
           <span>Cypress</span>
         </div>
         <h3>Back-end</h3>
@@ -101,8 +114,10 @@ export const CV: FC = () => {
           <span>Storybook</span>
           <span>Webpack</span>
           <span>Docker</span>
-          <span>Google Tag Manager</span>
-          <span>Google Analytics</span>
+          <span>GitHub Actions</span>
+          <span>AI Coding Agents</span>
+          <span>Segment</span>
+          <span>Google Analytics & Tag Manager</span>
         </div>
       </section>
 
@@ -110,45 +125,57 @@ export const CV: FC = () => {
         <h2>Experience</h2>
 
         <div>
-          <h3>Leaf Trade, Remote</h3>
+          <h3>LeafTrade (Acquired by Leaf Link), Remote</h3>
           <div>
-            <h4>Staff Front-end Software Engineer | (Promoted from Senior)</h4>
+            <h4>Staff Front-End Engineer</h4>
             <h5>JUNE 2022 - PRESENT</h5>
           </div>
           <ul>
             <li>
-              Led architectural planning and implementation for modernizing
-              legacy features, transforming Django templates into React
-              components with API integration, improving performance and
-              maintainability
+              Modernized a frontend codebase built on jQuery, legacy React,
+              SCSS, and Django templates; established linting and formatting
+              standards still used across the org
             </li>
             <li>
-              Established a shared component library published to GitHub NPM
-              registry, accelerating development across multiple applications
-              and ensuring design consistency
+              Rebuilt the e-commerce storefront from Django templates to
+              React/TypeScript with REST API integration; the main platform
+              dispensaries use to place bulk orders from cannabis vendors
             </li>
             <li>
-              Created comprehensive Storybook documentation with interactive
-              examples, reducing onboarding time for new developers and
-              improving cross-team collaboration
+              Built a Quick Order feature that lets buyers work through a
+              spreadsheet-style quantity grid to add items across multiple
+              dispensary carts at once, cutting down time-to-order for
+              high-volume customers
             </li>
             <li>
-              Implemented robust testing standards and achieved 100% test
-              coverage for new applications while systematically increasing
-              coverage in legacy code
+              Built and maintain a shared component library on the GitHub NPM
+              registry, including a full-featured data table with sorting,
+              filtering, pagination, multi-select, and export; documented with
+              interactive examples in a public Storybook
             </li>
             <li>
-              Introduced organization-wide code quality standards through
-              linting and formatting tools, significantly reducing bugs and
-              improving maintainability
+              Migrated legacy Django form and template pages to React with REST
+              API integration across the platform, including vendor and admin
+              dashboard pages
             </li>
             <li>
-              Built and optimized CI/CD pipelines using GitHub workflows for
-              automated testing, linting, and deployment processes
+              Introduced Redux Toolkit and RTK Query with OpenAPI codegen,
+              auto-generating typed API hooks from YAML specs and standardizing
+              data fetching across all frontend apps
             </li>
             <li>
-              Mentored junior and mid-level engineers through technical
-              guidance, pair programming, and detailed code reviews
+              Introduced AI coding agents into the team workflow, including
+              building and refactoring backend code needed for new frontend
+              features
+            </li>
+            <li>
+              Migrated analytics from Google Analytics and Tag Manager to
+              Segment, routing event data directly to the company data warehouse
+            </li>
+            <li>
+              Maintained test coverage on critical paths and key workflows using
+              Jest, React Testing Library, MSW, and Playwright; built and
+              maintained CI/CD pipelines with GitHub Actions
             </li>
           </ul>
         </div>
@@ -156,30 +183,29 @@ export const CV: FC = () => {
         <div>
           <h3>Dutchie, Remote</h3>
           <div>
-            <h4>Front-end Software Engineer</h4>
+            <h4>Front-End Software Engineer</h4>
             <h5>JUNE 2021 - JUNE 2022</h5>
           </div>
           <ul>
             <li>
-              Executed end-to-end redesign of Point-of-Sale application using
-              React and TypeScript in collaboration with design and product
-              teams
+              Redesigned the Point-of-Sale application end-to-end using React
+              and TypeScript, working directly with design and product
             </li>
             <li>
-              Refactored Redux architecture to eliminate circular dependencies,
-              improving application reliability and performance
+              Refactored Redux architecture to remove circular dependencies,
+              improving reliability and performance
             </li>
             <li>
-              Established testing framework using react-testing-library and led
-              weekly test mob sessions, increasing test coverage from 0% to 30%
+              Set up a testing framework using React Testing Library and ran
+              weekly test mob sessions, growing coverage from 0% to 30%
             </li>
             <li>
-              Gathered and implemented customer feedback to enhance user
-              experience across POS and Back of House applications
+              Gathered and acted on customer feedback to improve the POS and
+              Back of House apps
             </li>
             <li>
-              Led onboarding processes for new engineering hires, creating
-              documentation and providing hands-on support
+              Led onboarding for new engineering hires, writing documentation
+              and providing hands-on support
             </li>
           </ul>
         </div>
@@ -192,28 +218,25 @@ export const CV: FC = () => {
           </div>
           <ul>
             <li>
-              Founded and scaled software engineering department from solo role
-              to a full-fledged team, establishing coding standards and
-              development workflows
+              Built the software engineering department from scratch, growing
+              from a solo role to a full team with defined coding standards and
+              workflows
             </li>
             <li>
-              Designed and built company-wide internal portal featuring custom
-              forms, reports, and tools that streamlined operations across
-              departments
+              Designed and built a company-wide internal portal with custom
+              forms, reports, and tools used across departments
             </li>
             <li>
-              Led multiple redesigns of the main marketing website using PHP,
-              Python, React, and Vue, improving user engagement and conversion
-              metrics
+              Led several redesigns of the main marketing website using PHP,
+              Python, React, and Vue
             </li>
             <li>
-              Implemented data integration solutions between internal systems
-              and third-party vendors, ensuring consistent information flow
+              Built integrations between internal systems and third-party vendors
+              to keep data in sync
             </li>
             <li>
-              Developed technical specifications based on stakeholder
-              requirements, translating business needs into actionable
-              development tasks
+              Worked with stakeholders to write technical specs and break
+              requirements down into development tasks
             </li>
           </ul>
         </div>
@@ -226,16 +249,16 @@ export const CV: FC = () => {
           </div>
           <ul>
             <li>
-              Managed IT infrastructure for corporate headquarters and new
-              retail locations, ensuring optimal system performance
+              Managed IT infrastructure across corporate headquarters and new
+              retail locations
             </li>
             <li>
-              Created comprehensive technical documentation and training
-              materials for internal systems and procedures
+              Wrote technical documentation and training materials for internal
+              systems
             </li>
             <li>
-              Provided end-user support and troubleshooting for hardware,
-              software, and network issues across the organization
+              Handled end-user support for hardware, software, and network
+              issues across the org
             </li>
           </ul>
         </div>
