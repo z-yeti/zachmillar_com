@@ -102,7 +102,6 @@ const useTerminalTyper = (words: string[]) => {
 export const Home: FC = () => {
   const skills = useMemo(() => shuffle(ALL_SKILLS), []);
   const { text, history, isTyping } = useTerminalTyper(skills);
-
   return (
     <div className={styles.home}>
       <div className={styles.hero}>
